@@ -1,5 +1,22 @@
 //scripts.is
 
+function drawTree (h) { 
+
+   for (var i = 1; i < 6; i++) {  
+      var star = "";
+      for (var j = 1; j <= h; j++) {
+      star += "*"; 
+      }
+      console.log(star);
+   }
+}
+
+drawTree(1);  
+drawTree(2);
+drawTree(3);
+drawTree(4);
+drawTree(5);
+
 /*
 var i, j;
  
@@ -16,22 +33,25 @@ document.write("<br>");
 
 */
 
-function drawTree (i) { 
+/*
+function drawTree (i) { // tu podaję liczbę petli, więc mi wychodzi mnóstwo choinek, po 5 rzędów
 
-   for (var i = 1; i < 6; i++) {
-      var star = " ";
+   for (var i = 1; i < 6; i++) { 
+      var star = "";
       for (var j = 1; j <= i; j++) {
-      star += "*"; //nie rozumiem tego zapisu. Pierwotnie miałam symbol zmiennej "var" na początku i wyskakiwwało, że += to błąd. usunełam i zadziałało
+      star += "*"; 
       }
       console.log(star);
    }
 }
 
-drawTree(1) //teraz mam tam pięć choinek. Gdzie jest błąd?
-drawTree(2)  
+drawTree(1)  
+drawTree(2)
 drawTree(3)
 drawTree(4)
 drawTree(5)
+
+*/
 
 
 
