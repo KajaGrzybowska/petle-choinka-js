@@ -1,10 +1,10 @@
 //scripts.is
 
-function drawTree (h) { 
+function drawTree (h) { //liczba poziomów, wysokość
 
-   for (var i = 1; i < 6; i++) {  
+   for (var i = 1; i <= h; i++) {  // mogę też zacząć od 0
       var star = "";
-      for (var j = 1; j <= h; j++) {
+      for (var j = 1; j <= i; j++) {
       star += "*"; 
       }
       console.log(star);
@@ -16,6 +16,39 @@ drawTree(2);
 drawTree(3);
 drawTree(4);
 drawTree(5);
+
+
+
+// h = 2
+
+// for (var i = 1; 1 < 2; i++) {  // 
+//       var star = "";
+//       for (var j = 1; j <= i; j++) {
+//       star += "*"; 
+//       }
+//       console.log(star);
+//    }
+
+
+// for (var i = 2; 2 < 2; i++) {  // 
+//       var star = "";
+//       for (var j = 1; j <= i; j++) {
+//       star += "*"; 
+//       }
+//       console.log(star);
+//    }
+
+
+// for (var i = 1; i < h; i++) {  // 
+//       var star = "";
+//       for (var j = 1; j <= i; j++) {
+//       star += "*"; 
+//       }
+//       console.log(star);
+//    }
+
+
+
 
 /*
 var i, j;
